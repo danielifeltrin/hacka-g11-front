@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ReactGA from 'react-ga';
+import {getCLS, getFID, getLCP} from 'web-vitals';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,7 +14,7 @@ ReactDOM.render(
 );
 
 function sendToAnalytics({ id, name, value }) {
-  gtag('event', {
+  ga('send', 'event', {
     eventCategory: 'Web Vitals',
     eventAction: name,
     eventValue: Math.round(name === 'CLS' ? value * 1000 : value), // values must be integers
