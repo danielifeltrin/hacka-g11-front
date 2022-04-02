@@ -12,7 +12,7 @@ ReactDOM.render(
 );
 
 function sendToAnalytics({ id, name, value }) {
-  ga('send', 'event', {
+  gtag('event', {
     eventCategory: 'Web Vitals',
     eventAction: name,
     eventValue: Math.round(name === 'CLS' ? value * 1000 : value), // values must be integers
