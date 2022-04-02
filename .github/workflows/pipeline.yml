@@ -17,7 +17,7 @@ jobs:
 
         - name: Set Backend URL
           run: |
-            sed -i 's/$BACKEND_URL/${{ secrets.BACKEND_URL }}/g' ./src/App.js
+            sed -i 's/BACKEND_URL/${{ secrets.BACKEND_URL }}/g' ./src/App.js
         - name: Docker Login
           env:
             GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
