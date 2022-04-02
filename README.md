@@ -1,2 +1,2 @@
 # hacka-g11-front
-MBA ASO6 - Hackaton
+MBA ASO6 - hackathon
