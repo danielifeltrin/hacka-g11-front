@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {getCLS, getFID, getLCP} from 'web-vitals';
-import ReactGA from 'react-ga';
+import ReactGA from 'ga';
 
 ReactGA.initialize('G-9NG4NQFX0C');
 ReactGA.pageview(window.location.pathname + window.location.search);
